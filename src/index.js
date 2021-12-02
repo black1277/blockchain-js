@@ -1,5 +1,5 @@
-import { Blockchain } from "./class/Blockchain.js"
-import {Transaction} from "./class/Transaction.js"
+import { Blockchain } from './class/Blockchain.js'
+import { Transaction } from './class/Transaction.js'
 import EC from 'elliptic'
 
 const ec = new EC.ec('secp256k1')
@@ -34,10 +34,5 @@ console.log(`5 Ваш баланс составляет ${myBlockchain.getBalanc
 myBlockchain.minePendingTransactions(myWalletAddress)
 
 console.log(`6 Ваш баланс составляет ${myBlockchain.getBalanceOfAddress(myWalletAddress)}`)
-
-// console.log(myBlockchain.chain[0])
-// console.log(myBlockchain.chain[1])
-// console.log(myBlockchain.chain[2])
-// console.log(myBlockchain.chain[3])
 console.log('Блокчейн валидный? ', myBlockchain.isChainValid() ? 'Yes' : 'No')
 console.log('Список всех транзакций по данному кошельку', myBlockchain.getAllTransactionsForWallet(myWalletAddress))
