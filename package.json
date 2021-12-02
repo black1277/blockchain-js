@@ -1,13 +1,33 @@
 {
   "name": "blockchain-js",
   "version": "1.0.0",
-  "description": "",
+  "description": "simple blockchain-js for education",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "start": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./src/index.js"
   },
-  "keywords": ["blockchain"],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "blockchain",
+    "transactions",
+    "javascript"
+  ],
+  "author": "black1277 <black1277@narod.ru>",
+  "license": "ISC",
+  "repository": "github:black1277/blockchain-js",
+  "bugs": {
+    "url": "https://github.com/black1277/blockchain-js/issues"
+  },
+  "homepage": "https://github.com/black1277/blockchain-js",
+  "dependencies": {
+    "elliptic": "^6.5.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
 }
